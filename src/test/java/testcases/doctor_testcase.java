@@ -59,10 +59,10 @@ public class doctor_testcase extends AppTestBase {
 
 	@Test(priority = 2, groups = {
 			"sanity" }, description = "Verify that Doctor module is present or not ,If Present then expand the Doctor module and verify all presence of sub mudules under the Doctor module")
-	public void verifyAllSubModulesArePresent() throws Exception {
+	public void verifyAllSubModulesOfDoctorsArePresent() throws Exception {
 		doctor_PagesInstance = new doctor_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(doctor_PagesInstance.verifyAllSubModulesArePresentAndClickOnDispensary(),
+		Assert.assertTrue(doctor_PagesInstance.verifyAllSubModulesOfDoctorsArePresent(),
 				"Any of the module is not present, please check manually");
 		Assert.assertTrue(locatorsFactoryInstance.outPatientTabIsPresent(driver).isDisplayed(),
 				"Out Patient Tab is not present in the current page, Please check manually");
