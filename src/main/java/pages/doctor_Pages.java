@@ -108,7 +108,7 @@ public class doctor_Pages extends StartupPage {
 	 * 
 	 * Author: Yaksha
 	 */
-	public Boolean verifyAllSubModulesArePresentAndClickOnDispensary() throws Exception {
+	public Boolean verifyAllSubModulesOfDoctorsArePresent() throws Exception {
 		//Write your logic here
 		return false;
 	}
